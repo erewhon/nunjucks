@@ -1,3 +1,5 @@
+Note: this is a clone of the `nunjucks` repo with some dependencies (like Chokidar) removed.
+
 # Nunjucks
 
 [![NPM Version][npm-image]][npm-url]

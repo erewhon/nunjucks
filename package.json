@@ -27,9 +27,6 @@
     "express": "4.x",
     "fs-extra": "^5.0.0",
     "get-port": "^3.2.0",
-    "mocha": "< 8.x",
-    "mocha-phantomjs-core": "^2.1.2",
-    "mocha-phantomjs-istanbul": "0.0.2",
     "module-alias": "^2.0.3",
     "node-libs-browser": "^0.7.0",
     "nyc": "^11.4.1",
@@ -55,14 +52,6 @@
     "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0"
   },
-  "peerDependencies": {
-    "chokidar": "^3.3.0"
-  },
-  "peerDependenciesMeta": {
-    "chokidar": {
-      "optional": true
-    }
-  },
   "_moduleAliases": {
     "babel-register": "@babel/register"
   },
@@ -79,7 +68,7 @@
     "prepare": "npm run build",
     "test:instrument": "cross-env NODE_ENV=test scripts/bundle.js",
     "test:runner": "cross-env NODE_ENV=test NODE_PATH=tests/test-node-pkgs scripts/testrunner.js",
-    "test": "npm run lint && npm run test:instrument && npm run test:runner"
+    "test2": "npm run lint && npm run test:instrument && npm run test:runner"
   },
   "bin": {
     "nunjucks-precompile": "./bin/precompile"
